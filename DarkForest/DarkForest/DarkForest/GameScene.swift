@@ -3,22 +3,28 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
+    private var lastUpdateTime: TimeInterval = 0
+    let playerEntity = GKEntity()
     
     override func didMove(to view: SKView) {
-        super.didMove(to: view)
-        setupScene()
-    }
-}
-
-extension GameScene {
-    private func setupScene(){
-        setupBackground()
-    }
-    private func setupBackground(){
-        let background = SKSpriteNode(texture: SKTexture(image: .background))
-        background.size = CGSize(width: self.frame.size.width * 2, height: self.frame.size.height)
-        background.position = CGPoint(x: self.frame.size.width * 0.5, y: self.frame.size.height * 0.5)
-        addChild(background)
+        let cameraNode = SKCameraNode()
+        self.camera = cameraNode
+        addChild(cameraNode)
+        cameraNode.position = CGPoint(x: size.width/2, y: size.height/2)
         
+        let playerNode = SKSpriteNode(color: .red, size: CGSize(width: 40, height: 40))
+        playerNode.name = "Player"
+        addChild(playerNode)
+        
+        let controlComponent = PlayerControlCompanent()
+        playerEntity.addComponent(controlComponent)
+        controlComponent.setupControls(camera: cameraNode, scene: self)
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        if lastUpdateTime == 0 { lastUpdateTime = currentTime }
+        let dt = currentTime - lastUpdateTime
+        lastUpdateTime = currentTime
+        playerEntity.update(deltaTime: dt)
     }
 }
