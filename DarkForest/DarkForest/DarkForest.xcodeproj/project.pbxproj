@@ -10,6 +10,8 @@
 		8C02BEEA2D4FAE2E003FB7E0 /* TouchControlInputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02BEE92D4FAE2E003FB7E0 /* TouchControlInputNode.swift */; };
 		8C02BEEC2D4FE06B003FB7E0 /* ControlInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02BEEB2D4FE06A003FB7E0 /* ControlInputDelegate.swift */; };
 		8C02BEEF2D4FE9FA003FB7E0 /* PlayerControlCompanent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02BEEE2D4FE9FA003FB7E0 /* PlayerControlCompanent.swift */; };
+		8C02BF1C2D501C25003FB7E0 /* CharacterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02BF1B2D501C25003FB7E0 /* CharacterNode.swift */; };
+		8C02BF1E2D501CC0003FB7E0 /* NormalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02BF1D2D501CC0003FB7E0 /* NormalState.swift */; };
 		8C4F4FAD2D3D790700FC140A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F4FAC2D3D790700FC140A /* AppDelegate.swift */; };
 		8C4F4FB32D3D790700FC140A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F4FB22D3D790700FC140A /* GameScene.swift */; };
 		8C4F4FB52D3D790700FC140A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F4FB42D3D790700FC140A /* GameViewController.swift */; };
@@ -22,6 +24,8 @@
 		8C02BEE92D4FAE2E003FB7E0 /* TouchControlInputNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchControlInputNode.swift; sourceTree = "<group>"; };
 		8C02BEEB2D4FE06A003FB7E0 /* ControlInputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlInputDelegate.swift; sourceTree = "<group>"; };
 		8C02BEEE2D4FE9FA003FB7E0 /* PlayerControlCompanent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerControlCompanent.swift; path = DarkForest/PlayerControlCompanent.swift; sourceTree = SOURCE_ROOT; };
+		8C02BF1B2D501C25003FB7E0 /* CharacterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNode.swift; sourceTree = "<group>"; };
+		8C02BF1D2D501CC0003FB7E0 /* NormalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalState.swift; sourceTree = "<group>"; };
 		8C4F4FA92D3D790700FC140A /* DarkForest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkForest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4F4FAC2D3D790700FC140A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C4F4FB22D3D790700FC140A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -51,6 +55,15 @@
 			path = ControlInput;
 			sourceTree = "<group>";
 		};
+		8C02BF1F2D501CC9003FB7E0 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				8C02BF1D2D501CC0003FB7E0 /* NormalState.swift */,
+				8C02BF1B2D501C25003FB7E0 /* CharacterNode.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
 		8C4F4FA02D3D790700FC140A = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +83,7 @@
 		8C4F4FAB2D3D790700FC140A /* DarkForest */ = {
 			isa = PBXGroup;
 			children = (
+				8C02BF1F2D501CC9003FB7E0 /* Character */,
 				8C02BEED2D4FE0E5003FB7E0 /* ControlInput */,
 				8C4F4FAC2D3D790700FC140A /* AppDelegate.swift */,
 				8C4F4FB22D3D790700FC140A /* GameScene.swift */,
@@ -154,10 +168,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C02BEEA2D4FAE2E003FB7E0 /* TouchControlInputNode.swift in Sources */,
+				8C02BF1C2D501C25003FB7E0 /* CharacterNode.swift in Sources */,
 				8C4F4FB32D3D790700FC140A /* GameScene.swift in Sources */,
 				8C02BEEF2D4FE9FA003FB7E0 /* PlayerControlCompanent.swift in Sources */,
 				8C4F4FB52D3D790700FC140A /* GameViewController.swift in Sources */,
 				8C4F4FAD2D3D790700FC140A /* AppDelegate.swift in Sources */,
+				8C02BF1E2D501CC0003FB7E0 /* NormalState.swift in Sources */,
 				8C02BEEC2D4FE06B003FB7E0 /* ControlInputDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

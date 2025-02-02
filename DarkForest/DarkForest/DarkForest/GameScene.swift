@@ -5,19 +5,22 @@ import GameplayKit
 class GameScene: SKScene {
     private var lastUpdateTime: TimeInterval = 0
     let playerEntity = GKEntity()
+    var character: CharacterNode!
     
     override func didMove(to view: SKView) {
         let cameraNode = SKCameraNode()
         self.camera = cameraNode
         addChild(cameraNode)
         cameraNode.position = CGPoint(x: size.width/2, y: size.height/2)
+        character = CharacterNode(color: .blue, size: CGSize(width: 40, height: 60))
+        character.position = CGPoint(x: frame.midX, y: frame.midY)
+        character.name = "Player"
+        addChild(character)
         
-        let playerNode = SKSpriteNode(color: .red, size: CGSize(width: 40, height: 40))
-        playerNode.name = "Player"
-        addChild(playerNode)
+        character.setupStateMachine()
         
         let controlComponent = PlayerControlCompanent()
-        playerEntity.addComponent(controlComponent)
+        character.characterEntity?.addComponent(controlComponent)
         controlComponent.setupControls(camera: cameraNode, scene: self)
     }
     
@@ -25,6 +28,7 @@ class GameScene: SKScene {
         if lastUpdateTime == 0 { lastUpdateTime = currentTime }
         let dt = currentTime - lastUpdateTime
         lastUpdateTime = currentTime
-        playerEntity.update(deltaTime: dt)
+        
+        character.characterEntity?.update(deltaTime: dt)
     }
 }
