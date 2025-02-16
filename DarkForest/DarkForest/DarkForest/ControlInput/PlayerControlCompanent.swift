@@ -26,14 +26,13 @@ class PlayerControlCompanent: GKComponent, ControlInputDelegate {
     func follow(command: String?) {
         guard let command = command else { return }
         switch command {
-        case "buttonLeft":
-            character?.left = true
-        case "buttonRight":
-            character?.right = true
-        case "cancel buttonLeft", "stop buttonLeft":
-            character?.left = false
-        case "cancel buttonRight", "stop buttonRight":
-            character?.right = false
+        case "buttonLeft": character?.left = true
+        case "buttonRight": character?.right = true
+        case "buttonB": character?.jump = true
+            
+        case "cancel buttonLeft", "stop buttonLeft": character?.left = false
+        case "cancel buttonRight", "stop buttonRight": character?.right = false
+        case "cancel buttonB", "stop buttonB": character?.jump = false
         default: break
         }
     }
