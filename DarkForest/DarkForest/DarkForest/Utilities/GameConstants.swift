@@ -1,9 +1,3 @@
-//
-//  GameConstants.swift
-//  DarkForest
-//
-//  Created by MIKHAIL ZHACHKO on 16.02.25.
-//
 
 import Foundation
 

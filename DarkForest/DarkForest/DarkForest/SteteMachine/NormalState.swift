@@ -8,6 +8,10 @@ class NormalState: GKState{
         cNode = node
     }
     
+    override func didEnter(from previousState: GKState?) {
+        cNode.color = UIColor.blue
+    }
+    
     override func update(deltaTime seconds: TimeInterval) {
         var aSpeed: CGFloat = 0.0
         var dSpeed: CGFloat = 0.0
@@ -53,6 +57,10 @@ class NormalState: GKState{
                 cNode.physicsBody?.velocity.dy *= 0.5
             }
             cNode.landed = false
+        }
+        if cNode.down {
+            squashAndStretch(xScale: 1.3, yScale: 0.7)
+            self.stateMachine?.enter(CrouchStaate.self)
         }
         //MARK: - Updates
         cNode.xScale = approach(start: cNode.xScale, end: cNode.facing, shift: 0.05)

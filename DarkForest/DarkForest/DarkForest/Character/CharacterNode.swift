@@ -31,7 +31,8 @@ class CharacterNode: SKSpriteNode {
         characterEntity?.addComponent(GKSKNodeComponent(node: self))
         
         let normalState = NormalState(with: self)
-        stateMachine = GKStateMachine(states: [normalState])
+        let crounchState = CrouchStaate(withNode: self)
+        stateMachine = GKStateMachine(states: [normalState, crounchState])
         stateMachine?.enter(NormalState.self)
     }
 }

@@ -29,10 +29,12 @@ class PlayerControlCompanent: GKComponent, ControlInputDelegate {
         case "buttonLeft": character?.left = true
         case "buttonRight": character?.right = true
         case "buttonB": character?.jump = true
+        case "buttonDown": character?.down = true
             
         case "cancel buttonLeft", "stop buttonLeft": character?.left = false
         case "cancel buttonRight", "stop buttonRight": character?.right = false
         case "cancel buttonB", "stop buttonB": character?.jump = false
+        case "cancel buttonDown", "stop buttonDown": character?.down = false
         default: break
         }
     }
