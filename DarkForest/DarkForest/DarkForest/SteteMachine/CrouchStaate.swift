@@ -16,17 +16,20 @@ class CrouchStaate: GKState{
     
     override func update(deltaTime seconds: TimeInterval) {
         super.update(deltaTime: seconds)
-        if cNode.down {
+        if !cNode.down {
             stateMachine?.enter(NormalState.self)
+            return
         }
-        cNode.xScale = approach(start: cNode.xScale, end: cNode.facing, shift: 0.05)
-        cNode.yScale = approach(start: cNode.yScale, end: 1.0, shift: 0.05)
+        let targetX = cNode.facing * 1.0
+        let targetY: CGFloat = 0.7
+        cNode.xScale = approach(start: cNode.xScale, end: targetX, shift: 0.05)
+        cNode.yScale = approach(start: cNode.yScale, end: targetY, shift: 0.05)
     }
     func approach(start: CGFloat, end: CGFloat, shift: CGFloat) -> CGFloat {
         if start < end {
-            min(start + shift, end)
+            return min(start + shift, end)
         }else{
-            max(start - shift, end)
+            return max(start - shift, end)
         }
     }
 }
