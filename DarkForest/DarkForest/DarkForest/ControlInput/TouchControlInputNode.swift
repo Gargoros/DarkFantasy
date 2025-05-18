@@ -41,15 +41,15 @@ class TouchControlInputNode: SKSpriteNode {
     }
     //MARK: - Buttons setups
     func setupControls(size: CGSize){
-        addButton(button: buttonDirUp, position: CGPoint(x: -(size.width) / 3, y: -size.height / 4 + 30), name: "buttonUp", scale: 4.5)
-        addButton(button: buttonDirDown, position: CGPoint(x: -(size.width) / 3 , y: -size.height / 4 - 30), name: "buttonDown", scale: 4.5)
-        addButton(button: buttonDirLeft, position: CGPoint(x: -(size.width) / 3 - 30, y: -size.height / 4), name: "buttonLeft", scale: 4.5)
-        addButton(button: buttonDirRight, position: CGPoint(x: -(size.width) / 3 + 30, y: -size.height / 4), name: "buttonRight", scale: 4.5)
+        addButton(button: buttonDirUp, position: CGPoint(x: -(size.width) / 3, y: -size.height / 4 + size.height * 0.1), name: "buttonUp", scale: 5.5)
+        addButton(button: buttonDirDown, position: CGPoint(x: -(size.width) / 3 , y: -size.height / 4 - size.height * 0.1), name: "buttonDown", scale: 5.5)
+        addButton(button: buttonDirLeft, position: CGPoint(x: -(size.width) / 3 - size.height * 0.1, y: -size.height / 4), name: "buttonLeft", scale: 5.5)
+        addButton(button: buttonDirRight, position: CGPoint(x: -(size.width) / 3 + size.height * 0.1, y: -size.height / 4), name: "buttonRight", scale: 5.5)
         
-        addButton(button: buttonA, position: CGPoint(x: size.width / 3, y: -size.height / 4 - 40), name: "buttonA", scale: 3.6)
-        addButton(button: buttonB, position: CGPoint(x: size.width / 3 + 40, y: -size.height / 4), name: "buttonB", scale: 3.6)
-        addButton(button: buttonX, position: CGPoint(x: size.width / 3 - 40, y: -size.height / 4), name: "buttonX", scale: 3.6)
-        addButton(button: buttonY, position: CGPoint(x: size.width / 3, y: -size.height / 4 + 40), name: "buttonY", scale: 3.6)
+        addButton(button: buttonA, position: CGPoint(x: size.width / 3, y: -size.height / 4 - size.height * 0.12), name: "buttonA", scale: 4.5)
+        addButton(button: buttonB, position: CGPoint(x: size.width / 3 + size.height * 0.12, y: -size.height / 4), name: "buttonB", scale: 4.5)
+        addButton(button: buttonX, position: CGPoint(x: size.width / 3 - size.height * 0.12, y: -size.height / 4), name: "buttonX", scale: 4.5)
+        addButton(button: buttonY, position: CGPoint(x: size.width / 3, y: -size.height / 4 + size.height * 0.12), name: "buttonY", scale: 4.5)
     }
     //MARK: - Buttons touches
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
