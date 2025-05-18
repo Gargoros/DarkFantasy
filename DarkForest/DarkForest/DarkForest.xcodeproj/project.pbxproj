@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C02BEEA2D4FAE2E003FB7E0 /* TouchControlInputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02BEE92D4FAE2E003FB7E0 /* TouchControlInputNode.swift */; };
+		8C02BEEC2D4FE06B003FB7E0 /* ControlInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02BEEB2D4FE06A003FB7E0 /* ControlInputDelegate.swift */; };
+		8C02BEEF2D4FE9FA003FB7E0 /* PlayerControlCompanent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02BEEE2D4FE9FA003FB7E0 /* PlayerControlCompanent.swift */; };
+		8C02BF1C2D501C25003FB7E0 /* CharacterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02BF1B2D501C25003FB7E0 /* CharacterNode.swift */; };
+		8C02BF1E2D501CC0003FB7E0 /* NormalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02BF1D2D501CC0003FB7E0 /* NormalState.swift */; };
+		8C02C0FA2D625975003FB7E0 /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02C0F92D625975003FB7E0 /* GameConstants.swift */; };
+		8C02C0FC2D625FA2003FB7E0 /* PhysicsDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02C0FB2D625FA2003FB7E0 /* PhysicsDetection.swift */; };
 		8C4F4FAD2D3D790700FC140A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F4FAC2D3D790700FC140A /* AppDelegate.swift */; };
 		8C4F4FB32D3D790700FC140A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F4FB22D3D790700FC140A /* GameScene.swift */; };
 		8C4F4FB52D3D790700FC140A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F4FB42D3D790700FC140A /* GameViewController.swift */; };
 		8C4F4FB82D3D790700FC140A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8C4F4FB72D3D790700FC140A /* Base */; };
 		8C4F4FBA2D3D790900FC140A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4F4FB92D3D790900FC140A /* Assets.xcassets */; };
 		8C4F4FBD2D3D790900FC140A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8C4F4FBC2D3D790900FC140A /* Base */; };
+		8C7319D82D6BC77E004FF6E9 /* CrouchStaate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7319D72D6BC77E004FF6E9 /* CrouchStaate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C02BEE92D4FAE2E003FB7E0 /* TouchControlInputNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchControlInputNode.swift; sourceTree = "<group>"; };
+		8C02BEEB2D4FE06A003FB7E0 /* ControlInputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlInputDelegate.swift; sourceTree = "<group>"; };
+		8C02BEEE2D4FE9FA003FB7E0 /* PlayerControlCompanent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerControlCompanent.swift; path = DarkForest/ControlInput/PlayerControlCompanent.swift; sourceTree = SOURCE_ROOT; };
+		8C02BF1B2D501C25003FB7E0 /* CharacterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNode.swift; sourceTree = "<group>"; };
+		8C02BF1D2D501CC0003FB7E0 /* NormalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalState.swift; sourceTree = "<group>"; };
+		8C02C0F92D625975003FB7E0 /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
+		8C02C0FB2D625FA2003FB7E0 /* PhysicsDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsDetection.swift; sourceTree = "<group>"; };
 		8C4F4FA92D3D790700FC140A /* DarkForest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkForest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4F4FAC2D3D790700FC140A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C4F4FB22D3D790700FC140A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -23,6 +38,7 @@
 		8C4F4FB72D3D790700FC140A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C4F4FB92D3D790900FC140A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C4F4FBC2D3D790900FC140A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C7319D72D6BC77E004FF6E9 /* CrouchStaate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrouchStaate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C02BEED2D4FE0E5003FB7E0 /* ControlInput */ = {
+			isa = PBXGroup;
+			children = (
+				8C02BEEE2D4FE9FA003FB7E0 /* PlayerControlCompanent.swift */,
+				8C02BEEB2D4FE06A003FB7E0 /* ControlInputDelegate.swift */,
+				8C02BEE92D4FAE2E003FB7E0 /* TouchControlInputNode.swift */,
+			);
+			path = ControlInput;
+			sourceTree = "<group>";
+		};
+		8C02BF1F2D501CC9003FB7E0 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				8C02BF1B2D501C25003FB7E0 /* CharacterNode.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		8C02C0F42D624F60003FB7E0 /* GameScenes */ = {
+			isa = PBXGroup;
+			children = (
+				8C4F4FB22D3D790700FC140A /* GameScene.swift */,
+			);
+			path = GameScenes;
+			sourceTree = "<group>";
+		};
+		8C02C0F52D624FBC003FB7E0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C4F4FB42D3D790700FC140A /* GameViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8C02C0F62D624FF2003FB7E0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8C4F4FB62D3D790700FC140A /* Main.storyboard */,
+				8C4F4FB92D3D790900FC140A /* Assets.xcassets */,
+				8C4F4FBB2D3D790900FC140A /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8C02C0F72D625009003FB7E0 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				8C4F4FAC2D3D790700FC140A /* AppDelegate.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		8C02C0F82D62594A003FB7E0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8C02C0F92D625975003FB7E0 /* GameConstants.swift */,
+				8C02C0FB2D625FA2003FB7E0 /* PhysicsDetection.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		8C4F4FA02D3D790700FC140A = {
 			isa = PBXGroup;
 			children = (
@@ -55,14 +132,25 @@
 		8C4F4FAB2D3D790700FC140A /* DarkForest */ = {
 			isa = PBXGroup;
 			children = (
-				8C4F4FAC2D3D790700FC140A /* AppDelegate.swift */,
-				8C4F4FB22D3D790700FC140A /* GameScene.swift */,
-				8C4F4FB42D3D790700FC140A /* GameViewController.swift */,
-				8C4F4FB62D3D790700FC140A /* Main.storyboard */,
-				8C4F4FB92D3D790900FC140A /* Assets.xcassets */,
-				8C4F4FBB2D3D790900FC140A /* LaunchScreen.storyboard */,
+				8C7319D62D6BC751004FF6E9 /* SteteMachine */,
+				8C02C0F82D62594A003FB7E0 /* Utilities */,
+				8C02BF1F2D501CC9003FB7E0 /* Character */,
+				8C02BEED2D4FE0E5003FB7E0 /* ControlInput */,
+				8C02C0F72D625009003FB7E0 /* Template */,
+				8C02C0F42D624F60003FB7E0 /* GameScenes */,
+				8C02C0F52D624FBC003FB7E0 /* ViewController */,
+				8C02C0F62D624FF2003FB7E0 /* UI */,
 			);
 			path = DarkForest;
+			sourceTree = "<group>";
+		};
+		8C7319D62D6BC751004FF6E9 /* SteteMachine */ = {
+			isa = PBXGroup;
+			children = (
+				8C02BF1D2D501CC0003FB7E0 /* NormalState.swift */,
+				8C7319D72D6BC77E004FF6E9 /* CrouchStaate.swift */,
+			);
+			path = SteteMachine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +224,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C02BEEA2D4FAE2E003FB7E0 /* TouchControlInputNode.swift in Sources */,
+				8C02BF1C2D501C25003FB7E0 /* CharacterNode.swift in Sources */,
 				8C4F4FB32D3D790700FC140A /* GameScene.swift in Sources */,
+				8C7319D82D6BC77E004FF6E9 /* CrouchStaate.swift in Sources */,
+				8C02BEEF2D4FE9FA003FB7E0 /* PlayerControlCompanent.swift in Sources */,
 				8C4F4FB52D3D790700FC140A /* GameViewController.swift in Sources */,
+				8C02C0FC2D625FA2003FB7E0 /* PhysicsDetection.swift in Sources */,
 				8C4F4FAD2D3D790700FC140A /* AppDelegate.swift in Sources */,
+				8C02BF1E2D501CC0003FB7E0 /* NormalState.swift in Sources */,
+				8C02BEEC2D4FE06B003FB7E0 /* ControlInputDelegate.swift in Sources */,
+				8C02C0FA2D625975003FB7E0 /* GameConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
